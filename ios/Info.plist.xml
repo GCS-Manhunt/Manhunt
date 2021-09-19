@@ -43,6 +43,8 @@
     <array>
         <string>UIInterfaceOrientationPortrait</string>
     </array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Your location is required to play this game.</string>
     <key>CFBundleIconName</key>
     <string>AppIcon</string>
 </dict>
