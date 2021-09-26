@@ -6,5 +6,5 @@ public abstract class BasePlatformHandler
 
     public abstract void openLink(String url);
 
-    public abstract void updateLoc();
+    public abstract void updateLocation();
 }

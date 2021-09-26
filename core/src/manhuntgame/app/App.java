@@ -1,7 +1,10 @@
 package manhuntgame.app;
 
 import basewindow.*;
-import com.badlogic.gdx.Game;
+import manhuntgame.network.SynchronizedList;
+import manhuntgame.network.event.INetworkEvent;
+
+import java.util.UUID;
 
 public class App implements IUpdater, IDrawer, IWindowHandler
 {
@@ -11,7 +14,12 @@ public class App implements IUpdater, IDrawer, IWindowHandler
     public BaseFileManager fileManager;
     public Drawer drawer;
 
-    public static String location = "null";
+    public static final SynchronizedList<INetworkEvent> eventsOut = new SynchronizedList<>();
+    public static final SynchronizedList<INetworkEvent> eventsIn = new SynchronizedList<>();
+
+    public static final int network_protocol = 0;
+    public static UUID clientID;
+    public static String username;
 
     public App(BaseFileManager fileManager)
     {
@@ -27,7 +35,7 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         drawer.updateDimensions();
 
         if (app.window.platformHandler != null)
-           app.window.platformHandler.updateLoc();
+           app.window.platformHandler.updateLocation();
     }
 
     /* This method fires every frame after update().
@@ -36,8 +44,11 @@ public class App implements IUpdater, IDrawer, IWindowHandler
     public void draw()
     {
         drawer.setColor(255, 0, 0);
-        drawer.setFontSize(40);
-        drawer.drawText(drawer.width / 2, drawer.height / 2, location);
+        drawer.setFontSize(60);
+        drawer.drawText(drawer.width / 2, drawer.height / 2 - 60, Location.latitiude + "");
+        drawer.drawText(drawer.width / 2, drawer.height / 2, Location.longitude + "");
+        drawer.drawText(drawer.width / 2, drawer.height / 2 + 60, Location.altitude + "");
+
     }
 
     /* This method fires when the app is closed */

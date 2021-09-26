@@ -106,6 +106,7 @@ project(":core") {
 
     dependencies {
         api "com.badlogicgames.gdx:gdx:$gdxVersion"
-        
+        compile 'io.netty:netty-all:4.1.25.Final'
+
     }
 }
