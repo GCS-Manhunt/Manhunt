@@ -1,12 +1,6 @@
 package manhuntgame.app;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import basewindow.BasePlatformHandler;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.backends.android.AndroidApplication;
 
 public class AndroidPlatformHandler extends BasePlatformHandler
 {
@@ -33,5 +27,11 @@ public class AndroidPlatformHandler extends BasePlatformHandler
                 ((AndroidApplication)Gdx.app).startActivity(intent);
             }
         });*/
+    }
+
+    @Override
+    public void updateLocation()
+    {
+
     }
 }

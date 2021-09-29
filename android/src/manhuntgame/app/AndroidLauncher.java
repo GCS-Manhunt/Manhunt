@@ -1,5 +1,11 @@
 package manhuntgame.app;
 
+import android.Manifest;
+import android.app.Activity;
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -8,8 +14,10 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AndroidFiles;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
-public class AndroidLauncher extends AndroidApplication
+public class AndroidLauncher extends AndroidApplication implements LocationListener
 {
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -40,11 +48,24 @@ public class AndroidLauncher extends AndroidApplication
 		if (Build.VERSION.SDK_INT >= 30)
 			this.getWindow().getAttributes().layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_ALWAYS;
 
+		ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+
 		ManhuntGameApp.pointWidth = displayMetrics.widthPixels / displayMetrics.density;
 		ManhuntGameApp.pointHeight = displayMetrics.heightPixels / displayMetrics.density;
 
 		ManhuntGameApp.platformHandler = new AndroidPlatformHandler();
 
+		LocationManager lm = (LocationManager) this.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
+
 		initialize(new ManhuntGameApp(), config);
+	}
+
+	@Override
+	public void onLocationChanged(Location location)
+	{
+		manhuntgame.app.Location.latitiude = location.getLatitude();
+		manhuntgame.app.Location.longitude = location.getLongitude();
+		manhuntgame.app.Location.altitude = location.getAltitude();
 	}
 }
