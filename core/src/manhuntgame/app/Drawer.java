@@ -289,6 +289,35 @@ public class Drawer
         return lines;
     }
 
+    public double getInterfacePointerX(double x)
+    {
+        return (x - Math.max(0, App.app.window.absoluteWidth - width * scale) / 2) / scale;
+    }
+
+    public double getInterfacePointerY(double y)
+    {
+        return (y - Math.max(0, App.app.window.absoluteHeight - height * scale) / 2) / scale;
+    }
+
+    public void playVibration(String vibration)
+    {
+        if (!App.app.window.vibrationsEnabled)
+            return;
+
+        switch (vibration)
+        {
+            case "click":
+                App.app.window.vibrationPlayer.click();
+                break;
+            case "heavyClick":
+                App.app.window.vibrationPlayer.heavyClick();
+                break;
+            case "selectionChanged":
+                App.app.window.vibrationPlayer.selectionChanged();
+                break;
+        }
+    }
+
     public ModelPart createModelPart()
     {
         return App.app.window.createModelPart();
