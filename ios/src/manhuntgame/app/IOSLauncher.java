@@ -51,6 +51,8 @@ public class IOSLauncher extends IOSApplication.Delegate
         NSNotificationCenter.getDefaultCenter().addObserver(this, Selector.register("keyboardWillHide"), "UIKeyboardWillHideNotification", null);
 
         locationManager.requestWhenInUseAuthorization();
+        locationManager.startUpdatingHeading();
+        locationManager.startUpdatingLocation();
 
         return new IOSApplication(new ManhuntGameApp(), config);
     }

@@ -37,5 +37,6 @@ public class ScreenMain extends Screen
         drawer.drawText(drawer.width / 2, drawer.height / 2 - 60, Location.latitiude + "");
         drawer.drawText(drawer.width / 2, drawer.height / 2, Location.longitude + "");
         drawer.drawText(drawer.width / 2, drawer.height / 2 + 60, Location.altitude + "");
+        drawer.drawText(drawer.width / 2, drawer.height / 2 + 120, Location.compass + "");
     }
 }

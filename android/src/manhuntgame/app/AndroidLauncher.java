@@ -1,6 +1,10 @@
 package manhuntgame.app;
 
 import android.content.Context;
+import android.hardware.GeomagneticField;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -16,6 +20,12 @@ import com.badlogic.gdx.backends.android.AndroidFiles;
 
 public class AndroidLauncher extends AndroidApplication implements LocationListener
 {
+	public static GeomagneticField geomagneticField;
+	public static SensorManager sensorManager;
+	public static Sensor accelerometer;
+	public static Sensor magnetometer;
+	public static double declination;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -55,6 +65,13 @@ public class AndroidLauncher extends AndroidApplication implements LocationListe
 		LocationManager lm = (LocationManager) this.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
 
+		sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+		accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+		magnetometer = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+		CompassActivity ca = new CompassActivity();
+		sensorManager.registerListener(ca, accelerometer, 100000);
+        sensorManager.registerListener(ca, magnetometer, 100000);
+
 		initialize(new ManhuntGameApp(), config);
 	}
 
@@ -64,5 +81,12 @@ public class AndroidLauncher extends AndroidApplication implements LocationListe
 		manhuntgame.app.Location.latitiude = location.getLatitude();
 		manhuntgame.app.Location.longitude = location.getLongitude();
 		manhuntgame.app.Location.altitude = location.getAltitude();
+
+		geomagneticField = new GeomagneticField(
+				Double.valueOf(location.getLatitude()).floatValue(),
+				Double.valueOf(location.getLongitude()).floatValue(),
+				Double.valueOf(location.getAltitude()).floatValue(),
+				System.currentTimeMillis()
+		);
 	}
 }
