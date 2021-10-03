@@ -1,6 +1,10 @@
 package manhuntgame.app;
 
+import android.Manifest;
+import android.app.Notification;
+import android.app.Service;
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.GeomagneticField;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -10,13 +14,17 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
+import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AndroidFiles;
+
+import static android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION;
 
 public class AndroidLauncher extends AndroidApplication implements LocationListener
 {
@@ -55,7 +63,11 @@ public class AndroidLauncher extends AndroidApplication implements LocationListe
 		if (Build.VERSION.SDK_INT >= 30)
 			this.getWindow().getAttributes().layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_ALWAYS;
 
-		ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+		ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.FOREGROUND_SERVICE}, 1);
+		//Service.startForeground(notification, FOREGROUND_SERVICE_TYPE_LOCATION);  I don't get how to make this work. Everything else works well
+
+
+
 
 		ManhuntGameApp.pointWidth = displayMetrics.widthPixels / displayMetrics.density;
 		ManhuntGameApp.pointHeight = displayMetrics.heightPixels / displayMetrics.density;
