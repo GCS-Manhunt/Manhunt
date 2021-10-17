@@ -2,6 +2,7 @@ package manhuntgame.app;
 
 import basewindow.*;
 import com.badlogic.gdx.Game;
+import manhuntgame.network.Client;
 import manhuntgame.network.NetworkEventMap;
 import manhuntgame.network.SynchronizedList;
 import manhuntgame.network.event.*;
@@ -60,6 +61,11 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         }
 
         screen.update();
+
+        if (Client.handler != null)
+        {
+            Client.handler.reply();
+        }
     }
 
     /* This method fires every frame after update().
