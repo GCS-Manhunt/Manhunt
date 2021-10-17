@@ -1,172 +1,174 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\ec38dfbc6a5d869f86de79a9deea2d48\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2cc4385bf51b47065a59df3b08c89dee\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\630c79791c87d0eb67dfccce30b36e9e\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\aa8177fd9f8f1309d961dc2fb1cbd443\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\ff33f9c0518e127f470d56b0619b849e\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\825b01b7c21c54a305aebfcb58cc7a3d\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\94d6c513a6251632adfeaa75e9c8df99\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\78455b58c1e91ffa82ac0e31dc409c9d\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\a8d95057958af58d70d384b16b75e92f\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\c33b2c708caa08c8643956412b717a8b\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\c0b4665964aed8abcd90a1284fa90753\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\81cff6a770d4d5bc4a12a95970f02ec3\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\04423d7da4b19148a7f7333766ea9dc1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2603e56569d43e601b12b8947845d9b5\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\42a600dc7f73305d32064bd5667a3d39\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\82d99f70b797e56e81bfc53e392123d1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\8817b9c662fcfef5a75ba778c40bedfc\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\b2e53c77855aa9e67b23e6163013ce4c\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\233b789279bba18cd5f217411c6abcd1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\b7bccde4612c6620c3c09c2e8f3bb2e0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\fb6729d28a47dbe59de78e492beaf4d2\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/a4491fe403f5c29067f9df2a0afb18b6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/matei/.gradle/caches/transforms-2/files-2.1/8fe9003dd11ec9493678c4bf861ab974/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/40960bd7ebb1b1fc260ae292cc54eb52/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/18775d6f784f7f72828c96d09797361f/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/4653a1844076d2f023d8e8892680c075/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/62a98c0c753a731c092ecbc62122556b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/eab1dcbd0b18f20ea487427a50d51c5d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/81c35ec8a549b8ac00e75c6c80aa96cf/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/24aaa60ab20b4539475422a8c8d16bf1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/a85567da0471ab64ebc79f08f4714e88/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/96faaa7b157283c1c78b09b7b729318b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/338d2e8f8dc355acbc49afc76e06216f/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/d9cf03bcd1b075c1527c1b34f0e4f987/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/75d21f1c4474af22ff2abe4fea4c30df/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/e0d6f1844bb2e174bd2ff4f1826acd38/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/db023b7e9dbaedb2d5564a16e2ef86b9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/86eea83a713e712171af75a064f38448/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/7a24a1c7ace08105330c48712a58bbcc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/3fd0745b61c589418b63930f775ae728/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/87efb079e72ca546eafa69bbdbb3fcaf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/d8adf7a3fbd3f5f7b628b8e52067cf18/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
 	package
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:3:5-30
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:3:5-30
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:1-36:12
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:5:5-76
-	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:5:22-74
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:6:5-122
-	android:foregroundServiceType
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:6:22-62
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:6:63-119
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:5:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:7:5-79
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:7:22-76
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:8:5-67
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:8:22-64
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:9:5-66
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:9:22-63
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:8:22-63
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:10:5-75
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:9:5-75
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:10:22-73
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:10:22-74
 application
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:11:5-29:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2cc4385bf51b47065a59df3b08c89dee\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2cc4385bf51b47065a59df3b08c89dee\AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\81cff6a770d4d5bc4a12a95970f02ec3\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\81cff6a770d4d5bc4a12a95970f02ec3\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2603e56569d43e601b12b8947845d9b5\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2603e56569d43e601b12b8947845d9b5\AndroidManifest.xml:24:5-25:19
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:11:5-30:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/matei/.gradle/caches/transforms-2/files-2.1/8fe9003dd11ec9493678c4bf861ab974/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/matei/.gradle/caches/transforms-2/files-2.1/8fe9003dd11ec9493678c4bf861ab974/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/338d2e8f8dc355acbc49afc76e06216f/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/338d2e8f8dc355acbc49afc76e06216f/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/75d21f1c4474af22ff2abe4fea4c30df/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/75d21f1c4474af22ff2abe4fea4c30df/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\81cff6a770d4d5bc4a12a95970f02ec3\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/338d2e8f8dc355acbc49afc76e06216f/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:16:9-41
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:16:9-41
 	android:appCategory
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:15:9-35
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:15:9-35
 	android:icon
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:13:9-45
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:13:9-45
 	android:allowBackup
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:12:9-35
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:17:9-40
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:17:9-40
 	android:isGame
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:14:9-30
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:14:9-30
+service#manhuntgame.app.LocationService
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:18:9-52
+	android:name
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:18:18-49
 activity#manhuntgame.app.AndroidLauncher
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:18:9-27:20
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:19:9-28:20
 	android:screenOrientation
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:21:13-49
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:22:13-49
 	android:label
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:20:13-45
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:21:13-45
 	android:configChanges
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:22:13-107
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:23:13-107
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:19:13-59
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:20:13-59
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:23:13-26:29
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:24:17-69
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:24:25-66
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:25:17-77
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:25:27-74
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:26:27-74
 activity#manhuntgame.app.CompassActivity
-ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:28:9-52
+ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:29:9-52
 	android:name
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml:28:19-50
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml:29:19-50
 uses-sdk
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\ec38dfbc6a5d869f86de79a9deea2d48\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\ec38dfbc6a5d869f86de79a9deea2d48\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2cc4385bf51b47065a59df3b08c89dee\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2cc4385bf51b47065a59df3b08c89dee\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\630c79791c87d0eb67dfccce30b36e9e\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\630c79791c87d0eb67dfccce30b36e9e\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\aa8177fd9f8f1309d961dc2fb1cbd443\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\aa8177fd9f8f1309d961dc2fb1cbd443\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\ff33f9c0518e127f470d56b0619b849e\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\ff33f9c0518e127f470d56b0619b849e\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\825b01b7c21c54a305aebfcb58cc7a3d\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\825b01b7c21c54a305aebfcb58cc7a3d\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\94d6c513a6251632adfeaa75e9c8df99\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\94d6c513a6251632adfeaa75e9c8df99\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\78455b58c1e91ffa82ac0e31dc409c9d\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\78455b58c1e91ffa82ac0e31dc409c9d\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\a8d95057958af58d70d384b16b75e92f\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\a8d95057958af58d70d384b16b75e92f\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\c33b2c708caa08c8643956412b717a8b\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\c33b2c708caa08c8643956412b717a8b\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\c0b4665964aed8abcd90a1284fa90753\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\c0b4665964aed8abcd90a1284fa90753\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\81cff6a770d4d5bc4a12a95970f02ec3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\81cff6a770d4d5bc4a12a95970f02ec3\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\04423d7da4b19148a7f7333766ea9dc1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\04423d7da4b19148a7f7333766ea9dc1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2603e56569d43e601b12b8947845d9b5\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\2603e56569d43e601b12b8947845d9b5\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\42a600dc7f73305d32064bd5667a3d39\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\42a600dc7f73305d32064bd5667a3d39\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\82d99f70b797e56e81bfc53e392123d1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\82d99f70b797e56e81bfc53e392123d1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\8817b9c662fcfef5a75ba778c40bedfc\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\8817b9c662fcfef5a75ba778c40bedfc\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\b2e53c77855aa9e67b23e6163013ce4c\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\b2e53c77855aa9e67b23e6163013ce4c\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\233b789279bba18cd5f217411c6abcd1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\233b789279bba18cd5f217411c6abcd1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\b7bccde4612c6620c3c09c2e8f3bb2e0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\b7bccde4612c6620c3c09c2e8f3bb2e0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\fb6729d28a47dbe59de78e492beaf4d2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\parth\.gradle\caches\transforms-2\files-2.1\fb6729d28a47dbe59de78e492beaf4d2\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/a4491fe403f5c29067f9df2a0afb18b6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/a4491fe403f5c29067f9df2a0afb18b6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/matei/.gradle/caches/transforms-2/files-2.1/8fe9003dd11ec9493678c4bf861ab974/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/matei/.gradle/caches/transforms-2/files-2.1/8fe9003dd11ec9493678c4bf861ab974/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/40960bd7ebb1b1fc260ae292cc54eb52/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/40960bd7ebb1b1fc260ae292cc54eb52/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/18775d6f784f7f72828c96d09797361f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/18775d6f784f7f72828c96d09797361f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/4653a1844076d2f023d8e8892680c075/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/4653a1844076d2f023d8e8892680c075/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/62a98c0c753a731c092ecbc62122556b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/62a98c0c753a731c092ecbc62122556b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/eab1dcbd0b18f20ea487427a50d51c5d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/eab1dcbd0b18f20ea487427a50d51c5d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/81c35ec8a549b8ac00e75c6c80aa96cf/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/81c35ec8a549b8ac00e75c6c80aa96cf/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/24aaa60ab20b4539475422a8c8d16bf1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/24aaa60ab20b4539475422a8c8d16bf1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/a85567da0471ab64ebc79f08f4714e88/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/a85567da0471ab64ebc79f08f4714e88/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/96faaa7b157283c1c78b09b7b729318b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/96faaa7b157283c1c78b09b7b729318b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/338d2e8f8dc355acbc49afc76e06216f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/338d2e8f8dc355acbc49afc76e06216f/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/d9cf03bcd1b075c1527c1b34f0e4f987/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/d9cf03bcd1b075c1527c1b34f0e4f987/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/75d21f1c4474af22ff2abe4fea4c30df/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/75d21f1c4474af22ff2abe4fea4c30df/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/e0d6f1844bb2e174bd2ff4f1826acd38/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/e0d6f1844bb2e174bd2ff4f1826acd38/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/db023b7e9dbaedb2d5564a16e2ef86b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/db023b7e9dbaedb2d5564a16e2ef86b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/86eea83a713e712171af75a064f38448/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/86eea83a713e712171af75a064f38448/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/7a24a1c7ace08105330c48712a58bbcc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/7a24a1c7ace08105330c48712a58bbcc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/3fd0745b61c589418b63930f775ae728/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/3fd0745b61c589418b63930f775ae728/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/87efb079e72ca546eafa69bbdbb3fcaf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/87efb079e72ca546eafa69bbdbb3fcaf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/d8adf7a3fbd3f5f7b628b8e52067cf18/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/matei/.gradle/caches/transforms-2/files-2.1/d8adf7a3fbd3f5f7b628b8e52067cf18/AndroidManifest.xml:20:5-44
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-		ADDED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
-		INJECTED from C:\Users\parth\IdeaProjects\ManhuntApp\android\AndroidManifest.xml
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+		ADDED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml
+		INJECTED from /Users/matei/Desktop/java/Manhunt-App/android/AndroidManifest.xml

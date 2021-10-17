@@ -1,4 +1,4 @@
-#Sun Oct 03 17:06:31 EDT 2021
-base.0=C\:\\Users\\parth\\IdeaProjects\\ManhuntApp\\android\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Sun Oct 17 02:28:36 EDT 2021
+base.0=/Users/matei/Desktop/java/Manhunt-App/android/build/intermediates/dex/debug/mergeDexDebug/out
 renamed.0=classes.dex
 path.0=classes.dex

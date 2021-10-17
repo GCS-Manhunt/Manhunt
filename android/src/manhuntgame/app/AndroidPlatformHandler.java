@@ -35,6 +35,9 @@ public class AndroidPlatformHandler extends BasePlatformHandler
     {
         if (AndroidLauncher.geomagneticField != null)
         {
+            if (AndroidLauncher.instance.locationService != null)
+                AndroidLauncher.instance.locationService.requestLocationUpdates();
+
             AndroidLauncher.declination = AndroidLauncher.geomagneticField.getDeclination();
         }
     }
