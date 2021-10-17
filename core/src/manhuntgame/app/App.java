@@ -2,12 +2,10 @@ package manhuntgame.app;
 
 import basewindow.*;
 import com.badlogic.gdx.Game;
+import manhuntgame.network.Client;
 import manhuntgame.network.NetworkEventMap;
 import manhuntgame.network.SynchronizedList;
-import manhuntgame.network.event.EventKick;
-import manhuntgame.network.event.EventPing;
-import manhuntgame.network.event.EventSendClientDetails;
-import manhuntgame.network.event.INetworkEvent;
+import manhuntgame.network.event.*;
 import manhuntgame.ui.screen.Screen;
 import manhuntgame.ui.screen.ScreenMain;
 
@@ -38,6 +36,8 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         NetworkEventMap.register(EventPing.class);
         NetworkEventMap.register(EventSendClientDetails.class);
         NetworkEventMap.register(EventKick.class);
+        NetworkEventMap.register(EventAcceptConnection.class);
+        NetworkEventMap.register(EventSendPlayerIdentity.class);
     }
 
     /* This method fires every frame.
@@ -61,6 +61,11 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         }
 
         screen.update();
+
+        if (Client.handler != null)
+        {
+            Client.handler.reply();
+        }
     }
 
     /* This method fires every frame after update().

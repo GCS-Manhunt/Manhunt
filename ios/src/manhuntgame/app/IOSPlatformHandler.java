@@ -1,6 +1,7 @@
 package manhuntgame.app;
 
 import basewindow.BasePlatformHandler;
+import org.robovm.apple.corelocation.CLHeading;
 import org.robovm.apple.corelocation.CLLocation;
 import org.robovm.apple.foundation.NSURL;
 import org.robovm.apple.uikit.UIApplication;
@@ -47,5 +48,12 @@ public class IOSPlatformHandler extends BasePlatformHandler
             Location.longitude = l.getCoordinate().getLongitude();
             Location.altitude = l.getAltitude();
         }
+
+        CLHeading heading = IOSLauncher.locationManager.getHeading();
+
+        if (heading != null)
+            Location.compass = heading.getTrueHeading();
+        else
+            Location.compass = 0;
     }
 }

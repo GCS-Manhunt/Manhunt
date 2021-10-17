@@ -1,13 +1,25 @@
 package manhuntgame.app;
 
+import android.Manifest;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
+import android.content.pm.PackageManager;
+import android.hardware.GeomagneticField;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.IBinder;
+import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.android.AndroidApplication;
@@ -16,9 +28,20 @@ import com.badlogic.gdx.backends.android.AndroidFiles;
 
 public class AndroidLauncher extends AndroidApplication implements LocationListener
 {
+	public static GeomagneticField geomagneticField;
+	public static SensorManager sensorManager;
+	public static Sensor accelerometer;
+	public static Sensor magnetometer;
+	public static double declination;
+
+	public static AndroidLauncher instance;
+
+	public LocationService locationService;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
+		instance = this;
 		super.onCreate(savedInstanceState);
 
 		this.getFilesDir();
@@ -47,15 +70,49 @@ public class AndroidLauncher extends AndroidApplication implements LocationListe
 
 		ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
 
+		while (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+		{
+
+		}
+
+		permsGranted();
+
 		ManhuntGameApp.pointWidth = displayMetrics.widthPixels / displayMetrics.density;
 		ManhuntGameApp.pointHeight = displayMetrics.heightPixels / displayMetrics.density;
 
 		ManhuntGameApp.platformHandler = new AndroidPlatformHandler();
 
-		LocationManager lm = (LocationManager) this.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
-		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
-
 		initialize(new ManhuntGameApp(), config);
+	}
+
+	public void permsGranted()
+	{
+		//LocationManager lm = (LocationManager) this.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+		//lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
+
+		sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+		accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+		magnetometer = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
+		CompassActivity ca = new CompassActivity();
+		sensorManager.registerListener(ca, accelerometer, 100000);
+		sensorManager.registerListener(ca, magnetometer, 100000);
+
+		Intent intent = new Intent(this, LocationService.class);
+		bindService(intent, new ServiceConnection()
+		{
+			@Override
+			public void onServiceConnected(ComponentName name, IBinder service)
+			{
+				System.out.println("Connected");
+				locationService = ((LocationService.LocalBinder)service).getService();
+			}
+
+			@Override
+			public void onServiceDisconnected(ComponentName name)
+			{
+				System.out.println("Disconnected");
+			}
+		}, Context.BIND_AUTO_CREATE);
 	}
 
 	@Override
@@ -64,5 +121,12 @@ public class AndroidLauncher extends AndroidApplication implements LocationListe
 		manhuntgame.app.Location.latitiude = location.getLatitude();
 		manhuntgame.app.Location.longitude = location.getLongitude();
 		manhuntgame.app.Location.altitude = location.getAltitude();
+
+		geomagneticField = new GeomagneticField(
+				Double.valueOf(location.getLatitude()).floatValue(),
+				Double.valueOf(location.getLongitude()).floatValue(),
+				Double.valueOf(location.getAltitude()).floatValue(),
+				System.currentTimeMillis()
+		);
 	}
 }

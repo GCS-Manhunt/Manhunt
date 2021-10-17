@@ -1,5 +1,6 @@
 package manhuntgame.app;
 
+import android.hardware.SensorEvent;
 import basewindow.BasePlatformHandler;
 
 public class AndroidPlatformHandler extends BasePlatformHandler
@@ -32,6 +33,12 @@ public class AndroidPlatformHandler extends BasePlatformHandler
     @Override
     public void updateLocation()
     {
+        if (AndroidLauncher.geomagneticField != null)
+        {
+            if (AndroidLauncher.instance.locationService != null)
+                AndroidLauncher.instance.locationService.requestLocationUpdates();
 
+            AndroidLauncher.declination = AndroidLauncher.geomagneticField.getDeclination();
+        }
     }
 }
