@@ -16,7 +16,6 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
-import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.android.AndroidApplication;

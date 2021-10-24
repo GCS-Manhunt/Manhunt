@@ -1,6 +1,8 @@
 package manhuntgame.ui.screen;
 
 import manhuntgame.ui.TextBox;
+import manhuntgame.app.App;
+import manhuntgame.app.Drawer;
 
 public class ScreenSelectUsername extends Screen
 {

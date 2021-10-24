@@ -61,11 +61,10 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         }
 
         screen.update();
-        eventsOut.add(new EventSendLocation(Location.longitude,Location.latitude,Location.altitude));
 
         if (Client.handler != null)
         {
-            //eventsOut.add();
+            eventsOut.add(new EventSendLocation(Location.longitude, Location.latitude, Location.altitude));
             Client.handler.reply();
         }
     }
