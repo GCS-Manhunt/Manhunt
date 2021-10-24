@@ -48,7 +48,7 @@ public class ScreenDebug extends Screen
         drawer.setColor(255, 0, 0);
         drawer.setFontSize(60);
         drawer.drawText(drawer.width / 2, drawer.height / 2 - 120, "GPS position:");
-        drawer.drawText(drawer.width / 2, drawer.height / 2 - 60, Location.latitiude + "");
+        drawer.drawText(drawer.width / 2, drawer.height / 2 - 60, Location.latitude + "");
         drawer.drawText(drawer.width / 2, drawer.height / 2, Location.longitude + "");
         drawer.drawText(drawer.width / 2, drawer.height / 2 + 60, Location.altitude + "");
         drawer.drawText(drawer.width / 2, drawer.height / 2 + 120, Location.compass + "");

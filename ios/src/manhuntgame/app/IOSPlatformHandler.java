@@ -38,13 +38,13 @@ public class IOSPlatformHandler extends BasePlatformHandler
 
         if (l == null)
         {
-            Location.latitiude = 0;
+            Location.latitude = 0;
             Location.longitude = 0;
             Location.altitude = 0;
         }
         else
         {
-            Location.latitiude = l.getCoordinate().getLatitude();
+            Location.latitude = l.getCoordinate().getLatitude();
             Location.longitude = l.getCoordinate().getLongitude();
             Location.altitude = l.getAltitude();
         }
