@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/matei/Desktop/java/Manhunt-App/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "C:\\Users\\gebruiker\\Desktop\\Manhunt\\ManhuntApp\\android\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/matei/.gradle/caches/transforms-2/files-2.1/a4491fe403f5c29067f9df2a0afb18b6/res/values-v26/values-v26.xml",
+                    "source": "C:\\Users\\gebruiker\\.gradle\\caches\\transforms-2\\files-2.1\\d5f035250e75c3be05409954c7d95012\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

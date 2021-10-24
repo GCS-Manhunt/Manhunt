@@ -62,7 +62,7 @@ public class ScreenMain extends Screen
         @Override
         public void run()
         {
-            // how do we quit again? we can worry about this later though
+            // might be removed later
         }
     });
 

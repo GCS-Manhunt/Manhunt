@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/matei/Desktop/java/Manhunt-App/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
+            "outputFile": "C:\\Users\\gebruiker\\Desktop\\Manhunt\\ManhuntApp\\android\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
-                    "source": "/Users/matei/.gradle/caches/transforms-2/files-2.1/a4491fe403f5c29067f9df2a0afb18b6/res/values-lt/values-lt.xml",
+                    "source": "C:\\Users\\gebruiker\\.gradle\\caches\\transforms-2\\files-2.1\\d5f035250e75c3be05409954c7d95012\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/matei/.gradle/caches/transforms-2/files-2.1/338d2e8f8dc355acbc49afc76e06216f/res/values-lt/values-lt.xml",
+                    "source": "C:\\Users\\gebruiker\\.gradle\\caches\\transforms-2\\files-2.1\\7f6685f6741ec6bf5cbcae8dd025c510\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
