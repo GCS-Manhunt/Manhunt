@@ -1,7 +1,10 @@
 package manhuntgame.network.event;
 
+import com.badlogic.gdx.Game;
 import io.netty.buffer.ByteBuf;
+import manhuntgame.app.App;
 import manhuntgame.network.NetworkUtils;
+import manhuntgame.ui.screen.ScreenKicked;
 
 public class EventKick extends PersonalEvent
 {	
@@ -22,7 +25,7 @@ public class EventKick extends PersonalEvent
 	{
 		if (this.clientID == null)
 		{
-			// The client has been kicked from the server
+			App.app.screen = new ScreenKicked(reason);
 		}
 	}
 

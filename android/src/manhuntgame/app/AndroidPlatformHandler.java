@@ -1,12 +1,7 @@
 package manhuntgame.app;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
+import android.hardware.SensorEvent;
 import basewindow.BasePlatformHandler;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.backends.android.AndroidApplication;
 
 public class AndroidPlatformHandler extends BasePlatformHandler
 {
@@ -33,5 +28,17 @@ public class AndroidPlatformHandler extends BasePlatformHandler
                 ((AndroidApplication)Gdx.app).startActivity(intent);
             }
         });*/
+    }
+
+    @Override
+    public void updateLocation()
+    {
+        if (AndroidLauncher.geomagneticField != null)
+        {
+            if (AndroidLauncher.instance.locationService != null)
+                AndroidLauncher.instance.locationService.requestLocationUpdates();
+
+            AndroidLauncher.declination = AndroidLauncher.geomagneticField.getDeclination();
+        }
     }
 }

@@ -8,9 +8,7 @@ import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
 import com.badlogic.gdx.backends.iosrobovm.IOSFiles;
 import org.robovm.apple.corelocation.CLLocationManager;
 import org.robovm.apple.foundation.*;
-import org.robovm.apple.uikit.UIApplication;
-import org.robovm.apple.uikit.UIRectEdge;
-import org.robovm.apple.uikit.UIScreen;
+import org.robovm.apple.uikit.*;
 import org.robovm.objc.Selector;
 import org.robovm.objc.annotation.Method;
 
@@ -51,6 +49,8 @@ public class IOSLauncher extends IOSApplication.Delegate
         NSNotificationCenter.getDefaultCenter().addObserver(this, Selector.register("keyboardWillHide"), "UIKeyboardWillHideNotification", null);
 
         locationManager.requestWhenInUseAuthorization();
+        locationManager.startUpdatingHeading();
+        locationManager.startUpdatingLocation();
 
         return new IOSApplication(new ManhuntGameApp(), config);
     }
@@ -58,6 +58,9 @@ public class IOSLauncher extends IOSApplication.Delegate
     @Method(selector = "keyboardWillShow")
     public void keyboardWillShow(NSNotification n)
     {
+        //UIImagePickerController controller = new UIImagePickerController();
+        //this.getWindow().getRootViewController().presentViewController(controller, true, null);
+
         NSDictionary dict = n.getUserInfo();
         double keyboardFrame = ((NSValue) dict.get("UIKeyboardFrameEndUserInfoKey")).rectValue().getHeight();
 
