@@ -18,7 +18,7 @@ public class ScreenConnecting extends Screen
 		this.thread = t;
 	}
 
-	Button back = new Button(540, 1150, 760, 80, "Back", new Runnable()
+	Button back = new Button(540, 1250, 900, 200, "Back", new Runnable()
 	{
 		@Override
 		public void run()

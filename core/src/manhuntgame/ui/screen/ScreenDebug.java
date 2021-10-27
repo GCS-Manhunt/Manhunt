@@ -7,7 +7,7 @@ import manhuntgame.ui.Button;
 
 public class ScreenDebug extends Screen
 {
-    Button connect = new Button(540, 1800, 900, 140, "Connect", new Runnable()
+    Button connect = new Button(540, 1750, 900, 200, "Connect", new Runnable()
     {
         @Override
         public void run()
@@ -16,7 +16,7 @@ public class ScreenDebug extends Screen
         }
     });
 
-    Button testGame = new Button(540, 1600, 900, 140, "Test game", new Runnable()
+    Button testGame = new Button(540, 1500, 900, 200, "Test game", new Runnable()
     {
         @Override
         public void run()
@@ -46,11 +46,11 @@ public class ScreenDebug extends Screen
 
         Drawer drawer = App.app.drawer;
         drawer.setColor(255, 0, 0);
-        drawer.setFontSize(60);
-        drawer.drawText(drawer.width / 2, drawer.height / 2 - 120, "GPS position:");
-        drawer.drawText(drawer.width / 2, drawer.height / 2 - 60, Location.latitude + "");
-        drawer.drawText(drawer.width / 2, drawer.height / 2, Location.longitude + "");
-        drawer.drawText(drawer.width / 2, drawer.height / 2 + 60, Location.altitude + "");
+        drawer.setFontSize(120);
+        drawer.drawText(drawer.width / 2, drawer.height / 2 - 360, "GPS position:");
+        drawer.drawText(drawer.width / 2, drawer.height / 2 - 240, Location.latitude + "");
+        drawer.drawText(drawer.width / 2, drawer.height / 2 - 120, Location.longitude + "");
+        drawer.drawText(drawer.width / 2, drawer.height / 2 + 0, Location.altitude + "");
         drawer.drawText(drawer.width / 2, drawer.height / 2 + 120, Location.compass + "");
     }
 }

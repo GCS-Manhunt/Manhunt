@@ -14,7 +14,7 @@ public class ScreenConnect extends Screen
 {
     Thread clientThread;
 
-    Button exit = new Button(540, 1700, 700, 80, "Exit", new Runnable()
+    Button exit = new Button(540, 1750, 900, 200, "Exit", new Runnable()
     {
         @Override
         public void run()
@@ -23,7 +23,7 @@ public class ScreenConnect extends Screen
         }
     });
 
-    TextBox ip = new TextBox(540, 960, 1080, 80, "IP Address", new Runnable()
+    TextBox ip = new TextBox(540, 750, 1080, 200, "IP Address", new Runnable()
     {
         @Override
         public void run()
@@ -40,7 +40,7 @@ public class ScreenConnect extends Screen
         ip.lowerCase = true;
     }
 
-    Button join = new Button(540, 1050, 700, 80, "Join", new Runnable()
+    Button join = new Button(540, 1000, 900, 200, "Join", new Runnable()
     {
         @Override
         public void run()

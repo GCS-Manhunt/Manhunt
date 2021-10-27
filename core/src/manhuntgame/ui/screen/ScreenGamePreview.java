@@ -12,7 +12,7 @@ public class ScreenGamePreview extends Screen
     public String location;
     public String duration;
 
-    public Button back = new Button(540, 1800, 1000, 100, "Go back", new Runnable()
+    public Button back = new Button(540, 1750, 900, 200, "Go back", new Runnable()
     {
         @Override
         public void run()
@@ -21,7 +21,7 @@ public class ScreenGamePreview extends Screen
         }
     });
 
-    public Button agree = new Button(540, 1600, 1000, 100, "Agree and continue", new Runnable()
+    public Button agree = new Button(540, 1500, 900, 200, "Agree", new Runnable()
     {
         @Override
         public void run()
@@ -53,20 +53,22 @@ public class ScreenGamePreview extends Screen
     {
         Drawer d = App.app.drawer;
         d.setColor(255, 0, 0);
-        d.setFontSize(100);
+        d.setFontSize(135);
         d.drawText(540,100, this.gameName);
 
-        d.setFontSize(60);
-        d.drawText(540,200, this.location);
-        d.drawText(540,300, this.duration);
+        d.setFontSize(90);
+        d.drawText(540,250, this.location);
+        d.drawText(540,400, this.duration);
 
-        d.drawText(540,500, "Game rules and information:");
+        d.drawText(540,550, "Game rules and info:");
 
         d.setFontSize(35);
         for (int i = 0; i < rules.length; i++)
         {
-            d.drawText(25, 560 + 45 * i, rules[i], false);
+            d.drawText(25, 700 + 45 * i, rules[i], false);
         }
+
+
 
         back.draw();
         agree.draw();
