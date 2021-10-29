@@ -35,7 +35,7 @@ public class ScreenMain extends Screen
         @Override
         public void run()
         {
-            App.app.screen = new ScreenBeginGame();
+            App.app.screen = new ScreenConnect();
         }
     });
 
@@ -62,7 +62,10 @@ public class ScreenMain extends Screen
         @Override
         public void run()
         {
-            // how do we quit again? we can worry about this later though
+            if (App.app.window.platformHandler != null)
+                App.app.window.platformHandler.quit();
+            else
+                System.exit(0);
         }
     });
 

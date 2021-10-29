@@ -183,6 +183,16 @@ public class Drawer
         App.app.window.shapeRenderer.drawImage(drawX, drawY, drawSizeX, drawSizeY, "/images/" + img, false);
     }
 
+    public void drawImage(String img, double x, double y, double sizeX, double sizeY, double angle)
+    {
+        double drawX = (scale * (x) + Math.max(0, App.app.window.absoluteWidth - this.width * scale) / 2);
+        double drawY = (scale * (y) + Math.max(0, App.app.window.absoluteHeight - this.height * scale) / 2);
+        double drawSizeX = (sizeX * scale);
+        double drawSizeY = (sizeY * scale);
+
+        App.app.window.shapeRenderer.drawImage(drawX, drawY, drawSizeX, drawSizeY, "/images/" + img, angle, false);
+    }
+
     public void drawRect(double x, double y, double sizeX, double sizeY)
     {
         double drawX = Math.round(scale * (x - sizeX / 2) + Math.max(0, App.app.window.absoluteWidth - this.width * scale) / 2);

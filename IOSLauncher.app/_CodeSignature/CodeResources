@@ -74,7 +74,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		peMCJ6GsyJkjlGWimxw5MjnbOQ8=
+		BPaX2E6eJeqrQWIhkWqmK7/tSQM=
 		</data>
 		<key>Default-1024w-1366h@2x~ipad.png</key>
 		<data>
@@ -123,6 +123,10 @@
 		<key>font.png</key>
 		<data>
 		zSez1u59kwSeujKhJtfu2XwvHLc=
+		</data>
+		<key>images/compass_arrow.png</key>
+		<data>
+		Z0Z2O2QJ5WPCytZiwE2gOKGuaQA=
 		</data>
 		<key>images/copy.png</key>
 		<data>
@@ -366,11 +370,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			peMCJ6GsyJkjlGWimxw5MjnbOQ8=
+			BPaX2E6eJeqrQWIhkWqmK7/tSQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			2VIJpSUtd4FwU4uuZ2ibAmm8/WQPGeuxkYuR7THlOfQ=
+			NAsLsmmdjZwW3oSc0RHQ7BiCTwsSdvI7JEvrOqQVqFI=
 			</data>
 		</dict>
 		<key>Default-1024w-1366h@2x~ipad.png</key>
@@ -492,6 +496,17 @@
 			<key>hash2</key>
 			<data>
 			f3uzbun/tbcfDI64aPKbN2XqhaR+jj+RFQa71Rzz5X0=
+			</data>
+		</dict>
+		<key>images/compass_arrow.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z0Z2O2QJ5WPCytZiwE2gOKGuaQA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ibS3cUv0v6oblK1kfjskX4H64vSMJDJIF/XJfQScg7g=
 			</data>
 		</dict>
 		<key>images/copy.png</key>

@@ -1,10 +1,13 @@
 package manhuntgame.app;
 
 import android.hardware.SensorEvent;
+import android.os.Looper;
 import basewindow.BasePlatformHandler;
 
 public class AndroidPlatformHandler extends BasePlatformHandler
 {
+    public static boolean loaded = false;
+
     @Override
     public void quit()
     {
@@ -35,6 +38,13 @@ public class AndroidPlatformHandler extends BasePlatformHandler
     {
         if (AndroidLauncher.geomagneticField != null)
         {
+            if (loaded)
+                return;
+
+            loaded = true;
+
+            Looper.prepare();
+
             if (AndroidLauncher.instance.locationService != null)
                 AndroidLauncher.instance.locationService.requestLocationUpdates();
 
