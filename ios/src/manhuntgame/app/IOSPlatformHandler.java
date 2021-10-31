@@ -5,6 +5,7 @@ import org.robovm.apple.corelocation.CLHeading;
 import org.robovm.apple.corelocation.CLLocation;
 import org.robovm.apple.foundation.NSURL;
 import org.robovm.apple.uikit.UIApplication;
+import org.robovm.apple.uikit.UIStatusBarStyle;
 import org.robovm.objc.Selector;
 
 public class IOSPlatformHandler extends BasePlatformHandler
@@ -52,7 +53,9 @@ public class IOSPlatformHandler extends BasePlatformHandler
         CLHeading heading = IOSLauncher.locationManager.getHeading();
 
         if (heading != null)
+        {
             Location.compass = heading.getTrueHeading();
+        }
         else
             Location.compass = 0;
     }

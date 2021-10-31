@@ -56,7 +56,7 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
 		this.ctx = ctx;
 
 		this.sendEvent(new EventSendClientDetails(App.network_protocol, App.clientID, App.username));
-		this.sendEvent(new EventPing());
+		//this.sendEvent(new EventPing());
     }
 
     public void close()
@@ -131,7 +131,7 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
 				latencyCount = 0;
 			}
 
-			this.sendEvent(new EventPing());
+			//this.sendEvent(new EventPing());
 		}
     }
 
@@ -158,7 +158,7 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
 		System.err.println("A network exception has occurred: " + e.toString());
 		e.printStackTrace();
 
-		EventKick ev = new EventKick("A network exception has occurred: " + e.toString());
+		EventKick ev = new EventKick("Network exception");
 		ev.clientID = null;
 		App.eventsIn.add(ev);
 

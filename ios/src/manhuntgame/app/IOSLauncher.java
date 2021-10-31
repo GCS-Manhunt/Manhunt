@@ -25,8 +25,8 @@ public class IOSLauncher extends IOSApplication.Delegate
         ManhuntGameApp.initialize();
 
         config = new IOSApplicationConfiguration();
-        config.hideHomeIndicator = true;
-        config.screenEdgesDeferringSystemGestures = UIRectEdge.All;
+        config.hideHomeIndicator = false;
+        //config.screenEdgesDeferringSystemGestures = UIRectEdge.All;
         config.useAccelerometer = false;
         config.useCompass = false;
         config.allowIpod = true;

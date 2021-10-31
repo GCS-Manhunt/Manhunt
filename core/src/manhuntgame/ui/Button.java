@@ -13,6 +13,8 @@ public class Button
 	public double sizeY;
 	public String text;
 
+	public double customFontSize = -1;
+
 	public boolean selected = false;
 	public boolean enabled = true;
 
@@ -53,7 +55,11 @@ public class Button
 	public void draw()
 	{
 		Drawer drawing = App.app.drawer;
-		drawing.setFontSize(this.sizeY * 0.6);
+
+		if (this.customFontSize < 0)
+			drawing.setFontSize(this.sizeY * 0.6);
+		else
+			drawing.setFontSize(this.customFontSize);
 
 		if (!enabled)
 			drawing.setColor(this.disabledColR, this.disabledColG, this.disabledColB);

@@ -31,6 +31,8 @@ public class App implements IUpdater, IDrawer, IWindowHandler
 
     public boolean initialized = false;
 
+    public boolean debugLocation = false;
+
     public App(BaseFileManager fileManager)
     {
         this.fileManager = fileManager;
@@ -92,7 +94,7 @@ public class App implements IUpdater, IDrawer, IWindowHandler
 
         drawer.updateDimensions();
 
-        if (app.window.platformHandler != null)
+        if (app.window.platformHandler != null && !debugLocation)
            app.window.platformHandler.updateLocation();
 
         synchronized (eventsIn)

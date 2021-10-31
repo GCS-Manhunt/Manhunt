@@ -3,6 +3,7 @@ package manhuntgame.app;
 import android.hardware.SensorEvent;
 import android.os.Looper;
 import basewindow.BasePlatformHandler;
+import com.badlogic.gdx.Gdx;
 
 public class AndroidPlatformHandler extends BasePlatformHandler
 {
