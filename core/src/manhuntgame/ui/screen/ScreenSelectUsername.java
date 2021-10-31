@@ -6,15 +6,15 @@ import manhuntgame.app.Drawer;
 
 public class ScreenSelectUsername extends Screen
 {
-    @Override
-    public void update()
-    {
+  @Override
+  public void update()
+  {
 
-    }
+  }
 
-    @Override
-    public void draw()
-    {
+  @Override
+  public void draw()
+  {
 
-    }
+  }
 }

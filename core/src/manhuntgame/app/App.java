@@ -9,6 +9,7 @@ import manhuntgame.network.event.*;
 import manhuntgame.ui.screen.Screen;
 import manhuntgame.ui.screen.ScreenMain;
 
+import java.io.IOException;
 import java.util.UUID;
 
 public class App implements IUpdater, IDrawer, IWindowHandler
@@ -25,8 +26,10 @@ public class App implements IUpdater, IDrawer, IWindowHandler
     public static final SynchronizedList<INetworkEvent> eventsIn = new SynchronizedList<>();
 
     public static final int network_protocol = 0;
-    public static UUID clientID = UUID.randomUUID();
+    public static UUID clientID;
     public static String username = "test";
+
+    public boolean initialized = false;
 
     public App(BaseFileManager fileManager)
     {
@@ -38,6 +41,45 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         NetworkEventMap.register(EventKick.class);
         NetworkEventMap.register(EventAcceptConnection.class);
         NetworkEventMap.register(EventSendPlayerIdentity.class);
+        NetworkEventMap.register(EventSendLocation.class);
+        NetworkEventMap.register(EventSendHeading.class);
+        NetworkEventMap.register(EventSeekerProximity.class);
+        NetworkEventMap.register(EventHiderProximity.class);
+
+    }
+
+    public void initialize()
+    {
+        BaseFile uuidFile = fileManager.getFile("uuid");
+        if (!uuidFile.exists())
+        {
+            try
+            {
+                uuidFile.create();
+                uuidFile.startWriting();
+                uuidFile.println(UUID.randomUUID().toString());
+                uuidFile.stopWriting();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+                System.exit(1);
+            }
+        }
+
+        try
+        {
+            uuidFile.startReading();
+            App.clientID = UUID.fromString(uuidFile.nextLine());
+            uuidFile.stopReading();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+            System.exit(1);
+        }
+
+        this.initialized = true;
     }
 
     /* This method fires every frame.
@@ -45,6 +87,9 @@ public class App implements IUpdater, IDrawer, IWindowHandler
     @Override
     public void update()
     {
+        if (!initialized)
+            this.initialize();
+
         drawer.updateDimensions();
 
         if (app.window.platformHandler != null)
@@ -62,7 +107,7 @@ public class App implements IUpdater, IDrawer, IWindowHandler
 
         screen.update();
 
-        if (Client.handler != null)
+        if (Client.handler != null && Client.handler.ctx != null)
         {
             eventsOut.add(new EventSendLocation(Location.longitude, Location.latitude, Location.altitude));
             Client.handler.reply();
