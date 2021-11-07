@@ -74,7 +74,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
+<<<<<<< HEAD
 		peMCJ6GsyJkjlGWimxw5MjnbOQ8=
+=======
+		BPaX2E6eJeqrQWIhkWqmK7/tSQM=
+>>>>>>> c412a10d0ef59449e4e06d1da0e44474c77e1c83
 		</data>
 		<key>Default-1024w-1366h@2x~ipad.png</key>
 		<data>
@@ -124,6 +128,13 @@
 		<data>
 		zSez1u59kwSeujKhJtfu2XwvHLc=
 		</data>
+<<<<<<< HEAD
+=======
+		<key>images/compass_arrow.png</key>
+		<data>
+		Z0Z2O2QJ5WPCytZiwE2gOKGuaQA=
+		</data>
+>>>>>>> c412a10d0ef59449e4e06d1da0e44474c77e1c83
 		<key>images/copy.png</key>
 		<data>
 		Wd6nLnLENFwVrs+XOl9p+tFYLmM=
@@ -366,11 +377,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			peMCJ6GsyJkjlGWimxw5MjnbOQ8=
 			</data>
 			<key>hash2</key>
 			<data>
 			2VIJpSUtd4FwU4uuZ2ibAmm8/WQPGeuxkYuR7THlOfQ=
+=======
+			BPaX2E6eJeqrQWIhkWqmK7/tSQM=
+			</data>
+			<key>hash2</key>
+			<data>
+			NAsLsmmdjZwW3oSc0RHQ7BiCTwsSdvI7JEvrOqQVqFI=
+>>>>>>> c412a10d0ef59449e4e06d1da0e44474c77e1c83
 			</data>
 		</dict>
 		<key>Default-1024w-1366h@2x~ipad.png</key>
@@ -494,6 +513,20 @@
 			f3uzbun/tbcfDI64aPKbN2XqhaR+jj+RFQa71Rzz5X0=
 			</data>
 		</dict>
+<<<<<<< HEAD
+=======
+		<key>images/compass_arrow.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z0Z2O2QJ5WPCytZiwE2gOKGuaQA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ibS3cUv0v6oblK1kfjskX4H64vSMJDJIF/XJfQScg7g=
+			</data>
+		</dict>
+>>>>>>> c412a10d0ef59449e4e06d1da0e44474c77e1c83
 		<key>images/copy.png</key>
 		<dict>
 			<key>hash</key>

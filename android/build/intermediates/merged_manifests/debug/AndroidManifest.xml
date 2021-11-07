@@ -23,6 +23,10 @@
         android:icon="@drawable/ic_launcher"
         android:isGame="true"
         android:label="@string/app_name"
+<<<<<<< HEAD
+=======
+        android:testOnly="true"
+>>>>>>> c412a10d0ef59449e4e06d1da0e44474c77e1c83
         android:theme="@style/GdxTheme" >
         <service android:name="manhuntgame.app.LocationService" />
 
