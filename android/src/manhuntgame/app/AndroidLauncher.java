@@ -47,9 +47,9 @@ public class AndroidLauncher extends AndroidApplication implements LocationListe
 
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
 		config.depth = 24;
-		config.useImmersiveMode = true;
+		config.useImmersiveMode = false;
 		config.useAccelerometer = false;
-		config.useCompass = false;
+		config.useCompass = true;
 		config.maxSimultaneousSounds = 64;
 
 		//ManhuntGameApp.window.antialiasingEnabled = true;
@@ -118,11 +118,11 @@ public class AndroidLauncher extends AndroidApplication implements LocationListe
 		manhuntgame.app.Location.longitude = location.getLongitude();
 		manhuntgame.app.Location.altitude = location.getAltitude();
 
-		geomagneticField = new GeomagneticField(
+		/*geomagneticField = new GeomagneticField(
 				Double.valueOf(location.getLatitude()).floatValue(),
 				Double.valueOf(location.getLongitude()).floatValue(),
 				Double.valueOf(location.getAltitude()).floatValue(),
 				System.currentTimeMillis()
-		);
+		);*/
 	}
 }

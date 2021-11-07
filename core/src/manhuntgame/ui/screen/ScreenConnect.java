@@ -1,5 +1,6 @@
 package manhuntgame.ui.screen;
 
+import basewindow.BaseFile;
 import com.badlogic.gdx.Game;
 import manhuntgame.app.App;
 import manhuntgame.app.Drawer;
@@ -28,7 +29,21 @@ public class ScreenConnect extends Screen
         @Override
         public void run()
         {
+            BaseFile file = App.app.fileManager.getFile("last_game");
 
+            try
+            {
+                if (!file.exists())
+                    file.create();
+
+                file.startWriting();
+                file.println(ip.inputText);
+                file.stopWriting();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
         }
     }, "");
 
@@ -38,6 +53,23 @@ public class ScreenConnect extends Screen
         ip.maxChars = 43;
         ip.allowColons = true;
         ip.lowerCase = true;
+
+        BaseFile file = App.app.fileManager.getFile("last_game");
+
+        if (file.exists())
+        {
+            try
+            {
+                file.startReading();
+                ip.inputText = file.nextLine();
+                file.stopReading();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+
     }
 
     Button join = new Button(540, 1050, 700, 80, "Join", new Runnable()

@@ -30,12 +30,22 @@ public class ScreenDebug extends Screen
         }
     });
 
+    Button testHeadings = new Button(540, 1400, 900, 140, "Test headings", new Runnable()
+    {
+        @Override
+        public void run()
+        {
+            App.app.screen = new ScreenHeadings();
+        }
+    });
+
 
     @Override
     public void update()
     {
         connect.update();
         testGame.update();
+        testHeadings.update();
     }
 
     @Override
@@ -43,6 +53,7 @@ public class ScreenDebug extends Screen
     {
         connect.draw();
         testGame.draw();
+        testHeadings.draw();
 
         Drawer drawer = App.app.drawer;
         drawer.setColor(255, 0, 0);
@@ -52,5 +63,9 @@ public class ScreenDebug extends Screen
         drawer.drawText(drawer.width / 2, drawer.height / 2, Location.longitude + "");
         drawer.drawText(drawer.width / 2, drawer.height / 2 + 60, Location.altitude + "");
         drawer.drawText(drawer.width / 2, drawer.height / 2 + 120, Location.compass + "");
+
+        drawer.drawText(drawer.width / 2, drawer.height / 2 + 180, Location.compassA + "");
+        drawer.drawText(drawer.width / 2, drawer.height / 2 + 240, Location.compassB + "");
+
     }
 }

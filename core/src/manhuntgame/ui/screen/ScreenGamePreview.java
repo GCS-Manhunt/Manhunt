@@ -27,7 +27,7 @@ public class ScreenGamePreview extends Screen
         public void run()
         {
             App.eventsOut.add(new EventSendPlayerIdentity("Test user name"));
-            //App.app.screen = new ScreenSelectUsername();
+            App.app.screen = new ScreenHeadings();
         }
     });
 

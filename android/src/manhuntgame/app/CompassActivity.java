@@ -26,6 +26,9 @@ public class CompassActivity extends Activity implements SensorEventListener
                 float[] orientation = new float[3];
                 SensorManager.getOrientation(r, orientation);
                 manhuntgame.app.Location.compass = (360 + 180 * (orientation[0] + AndroidLauncher.declination) / Math.PI) % 360;
+
+                manhuntgame.app.Location.compassA = (360 + 180 * (orientation[0]) / Math.PI) % 360;
+                manhuntgame.app.Location.compassB = (360 + 180 * (AndroidLauncher.declination) / Math.PI) % 360;
             }
         }
     }
