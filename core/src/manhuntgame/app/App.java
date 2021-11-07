@@ -47,6 +47,9 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         NetworkEventMap.register(EventSendHeading.class);
         NetworkEventMap.register(EventSeekerProximity.class);
         NetworkEventMap.register(EventHiderProximity.class);
+        NetworkEventMap.register(EventEnterCode.class);
+        NetworkEventMap.register(EventMakeSeeker.class);
+        NetworkEventMap.register(EventSendScore.class);
 
     }
 

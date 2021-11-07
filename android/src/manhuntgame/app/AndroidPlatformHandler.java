@@ -37,7 +37,9 @@ public class AndroidPlatformHandler extends BasePlatformHandler
     @Override
     public void updateLocation()
     {
-        if (AndroidLauncher.geomagneticField != null)
+        AndroidLauncher.declination = -23.45 * Math.cos(((System.currentTimeMillis() / 1000 / 60 / 60 / 24) % 365.25 + 10) / 365.25 * Math.PI * 2);
+
+        /*if (AndroidLauncher.geomagneticField != null)
         {
             if (loaded)
                 return;
@@ -50,6 +52,6 @@ public class AndroidPlatformHandler extends BasePlatformHandler
                 AndroidLauncher.instance.locationService.requestLocationUpdates();
 
             AndroidLauncher.declination = AndroidLauncher.geomagneticField.getDeclination();
-        }
+        }*/
     }
 }

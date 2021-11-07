@@ -2,6 +2,7 @@ package manhuntgame.ui.screen;
 
 import manhuntgame.app.App;
 import manhuntgame.app.Drawer;
+import manhuntgame.network.event.EventEnterCode;
 import manhuntgame.ui.Button;
 
 public class ScreenInputCode extends Screen
@@ -117,8 +118,17 @@ public class ScreenInputCode extends Screen
         public void run()
         {
             if (count < nums.length)
-            {
                 App.app.screen = new ScreenHeadings();
+            else
+            {
+                int n = 0;
+
+                for (int i = 0; i < nums.length; i++)
+                {
+                    n += Math.pow(10, nums.length - i - 1) * nums[i];
+                }
+
+                App.eventsOut.add(new EventEnterCode(n));
             }
         }
     });

@@ -26,7 +26,9 @@ public class ScreenHeadings extends Screen
     @Override
     public void update()
     {
-        input.update();
+        if (GameState.game.seeker)
+            input.update();
+
         headingTracker.update();
     }
 
@@ -54,6 +56,41 @@ public class ScreenHeadings extends Screen
             d.drawText(posX, posY, GameState.game.proximity);
         }
 
-        input.draw();
+        d.setColor(255, 0, 0);
+        d.setFontSize(60);
+
+        if (GameState.game.seeker)
+        {
+            d.drawText(50, 50, "Role: Seeker", false);
+            d.setFontSize(40);
+            d.drawText(50, 100, "Use the arrows to find hiders!", false);
+            d.drawText(50, 140, "If you find a hider, input their code", false);
+        }
+        else
+        {
+            d.drawText(50, 50, "Role: Hider", false);
+            d.setFontSize(40);
+            d.drawText(50, 100, "Hide from the seekers!", false);
+            d.drawText(50, 140, "You get more points if you play it risky", false);
+        }
+
+        d.setFontSize(60);
+        d.drawText(50, 220, "Points: " + GameState.game.points, false);
+
+        d.setFontSize(40);
+        d.drawText(50, 260, GameState.game.getRankText(GameState.game.rank), false);
+        d.drawText(50, 300, GameState.game.getRankText2(), false);
+
+
+        if (GameState.game.seeker)
+            input.draw();
+        else
+        {
+            d.setFontSize(60);
+            d.drawText(540, 1500, "Your code:");
+            d.setFontSize(140);
+            d.drawText(540, 1600, String.format("%06d", GameState.game.code));
+        }
+
     }
 }
