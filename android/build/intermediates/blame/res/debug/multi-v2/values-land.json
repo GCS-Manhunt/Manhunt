@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\abrah\\Documents\\ManhuntApp\\android\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\abrah\\.gradle\\caches\\transforms-2\\files-2.1\\a9404b8d67cc010b3d8dacc94723d15b\\res\\values-land\\values-land.xml",
-=======
             "outputFile": "/Users/matei/Desktop/java/Manhunt-App/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/Users/matei/.gradle/caches/transforms-2/files-2.1/a4491fe403f5c29067f9df2a0afb18b6/res/values-land/values-land.xml",
->>>>>>> c412a10d0ef59449e4e06d1da0e44474c77e1c83
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
