@@ -17,16 +17,16 @@ public class ScreenBeginGame extends Screen
         @Override
         public void run()
         {
-            App.app.screen = new ScreenDebug(); // can be changed later
+            App.app.screen = new ScreenSeeker(); // can be changed later
         }
     });
 
-    Button join = new Button(540, 1250, 900, 200, "Join/Connect", new Runnable()
+    Button join = new Button(540, 1250, 900, 200, "Join", new Runnable()
     {
         @Override
         public void run()
         {
-            App.app.screen = new ScreenDebug(); // can be changed later
+            App.app.screen = new ScreenHider(); // can be changed later
         }
     });
 

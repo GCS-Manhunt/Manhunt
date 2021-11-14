@@ -45,6 +45,7 @@ public class ScreenMain extends Screen
         public void run()
         {
             // App.app.screen = new ScreenSettings(); todo later
+            App.app.screen = new ScreenBeginGame(); // temp debugging
         }
     });
 

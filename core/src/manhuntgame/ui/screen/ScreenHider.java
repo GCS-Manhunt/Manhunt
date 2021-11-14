@@ -1,38 +1,27 @@
 package manhuntgame.ui.screen;
 
-import manhuntgame.app.*;
-import manhuntgame.network.event.EventSendPlayerIdentity;
+import manhuntgame.app.App;
+import manhuntgame.app.Drawer;
+import manhuntgame.app.GameState;
+import manhuntgame.app.HeadingTracker;
+import manhuntgame.app.Location;
+import manhuntgame.app.PlayerHeading;
 import manhuntgame.ui.Button;
 
-import java.net.Inet4Address;
-
-public class ScreenSeeker extends Screen
+public class ScreenHider extends Screen
 {
     public HeadingTracker headingTracker = GameState.game.headingTracker;
     // public scoreTracker scoreTracker = GameState.game.scoreTracker;
     // ^ make the above whatever is used to track the score
 
-    // call for help button
-    public Button call = new Button(540, 1500, 900, 200, "Request help", new Runnable()
-    {
-        @Override
-        public void run()
-        {
-            // App.app.screen = new ScreenMain();
-        }
-    });
+    public String code = "123456";
 
-    // say someone's been found. just to be clear, ive no clue how you would do this
-    public Button found = new Button(540, 1750, 900, 200, "Found hider", new Runnable()
-    {
-        @Override
-        public void run()
-        {
-            // App.app.screen = new ScreenSeeker();
-        }
-    });
+    /* each player has a code (sent by server) they can provide if they're caught.
+    somehow, the screen needs to change upon verification - see
+    ScreenEnterCode. no idea how you would do this, however
+     */
 
-    public ScreenSeeker()
+    public ScreenHider()
     {
 
     }
@@ -42,9 +31,6 @@ public class ScreenSeeker extends Screen
     {
         headingTracker.update();
         // scoreTracker.update();
-
-        call.update();
-        found.update();
     }
 
     @Override
@@ -66,8 +52,9 @@ public class ScreenSeeker extends Screen
         d.setFontSize(135);
         d.drawText(540,1250, "Score:"); // append score here
 
-        call.draw();
-        found.draw();
+        d.drawText(540, 1500, "");
+
+        d.drawText(540, 1750, "Code: "+code);
 
         for (PlayerHeading ph: headingTracker.headings)
         {
