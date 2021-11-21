@@ -88,7 +88,7 @@ public class TextBox
 		drawing.fillOval(posX - sizeX / 2 + sizeY / 2, posY - sizeY * 3 / 4, sizeY, sizeY);
 		drawing.fillOval(posX + sizeX / 2 - sizeY / 2, posY - sizeY * 3 / 4, sizeY, sizeY);
 
-		drawing.fillRect(posX, posY - 15, sizeX, sizeY * 3 / 4);
+		drawing.fillRect(posX, posY - sizeY / 2, sizeX, sizeY * 3 / 4);
 
 		double m = 0.8;
 
@@ -108,8 +108,17 @@ public class TextBox
 
 		drawing.setColor(255, 255, 255);
 
-		drawing.drawText(posX, posY - sizeY * 13 / 16, labelText);
+		if (!selected)
+		{
+			drawing.drawText(posX, posY - sizeY * 13 / 16, labelText);
+		}
+		else
+		{
+			drawing.setFontSize(this.sizeY * 0.4);
+			drawing.drawText(posX - sizeX / 2 + 100, posY - sizeY * 13 / 16, labelText, false);
+		}
 
+		drawing.setFontSize(this.sizeY * 0.4);
 		this.drawInput();
 
 		if (selected && inputText.length() > 0)

@@ -61,10 +61,10 @@ public class Button
 		else
 			drawing.setFontSize(this.customFontSize);
 
+		drawing.setColor(this.unselectedColR, this.unselectedColG, this.unselectedColB);
+
 		if (!enabled)
 			drawing.setColor(this.disabledColR, this.disabledColG, this.disabledColB);
-
-		drawing.setColor(this.unselectedColR, this.unselectedColG, this.unselectedColB);
 
 		drawing.fillRect(posX, posY, sizeX - sizeY, sizeY);
 		drawing.fillOval(posX - sizeX / 2 + sizeY / 2, posY, sizeY, sizeY);

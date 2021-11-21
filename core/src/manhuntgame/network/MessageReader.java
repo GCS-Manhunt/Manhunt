@@ -46,11 +46,11 @@ public class MessageReader
 					{
 						if (isServer && s != null)
 						{
-							s.sendEventAndClose(new EventKick("A network exception has occurred: message size " + endpoint + " is too big!"));
+							s.sendEventAndClose(new EventKick("Message too big"));
 						}
 						else
 						{
-							EventKick ev = new EventKick("A network exception has occurred: message size " + endpoint + " is too big!");
+							EventKick ev = new EventKick("Message too big");
 							ev.clientID = null;
 							App.eventsIn.add(ev);
 
@@ -78,11 +78,11 @@ public class MessageReader
 						{
 							if (isServer && s != null)
 							{
-								s.sendEventAndClose(new EventKick("A network exception has occurred: message size " + endpoint + " is too big!"));
+								s.sendEventAndClose(new EventKick("Message too big"));
 							}
 							else
 							{
-								EventKick ev = new EventKick("A network exception has occurred: message size " + endpoint + " is too big!");
+								EventKick ev = new EventKick("Message too big");
 								ev.clientID = null;
 								App.eventsIn.add(ev);
 
@@ -108,11 +108,11 @@ public class MessageReader
 
 			if (isServer && s != null)
 			{
-				s.sendEventAndClose(new EventKick("A network exception has occurred: " + e.toString()));
+				s.sendEventAndClose(new EventKick("Network exception"));
 			}
 			else
 			{
-				EventKick ev = new EventKick("A network exception has occurred: " + e.toString());
+				EventKick ev = new EventKick("Network exception");
 				ev.clientID = null;
 				App.eventsIn.add(ev);
 
@@ -126,6 +126,7 @@ public class MessageReader
 	public synchronized boolean readMessage(ServerHandler s, ByteBuf m, UUID clientID) throws Exception
 	{
 		int i = m.readInt();
+		//System.out.println(i);
 		Class<? extends INetworkEvent> c = NetworkEventMap.get(i);
 
 		if (c == null)

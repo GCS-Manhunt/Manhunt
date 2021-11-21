@@ -29,6 +29,8 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
 	public static long lastLatencyTime = 0;
 	public static long lastLatencyAverage = 0;
 
+	public boolean open = false;
+
 	public UUID connectionID;
 
 	public ClientHandler(UUID connectionID)
@@ -40,6 +42,8 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
 	@Override
     public void channelActive(ChannelHandlerContext ctx)
     {
+		this.open = true;
+
     	if (this.connectionID != Client.connectionID)
 		{
 			if (ctx != null)
@@ -56,7 +60,7 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
 		this.ctx = ctx;
 
 		this.sendEvent(new EventSendClientDetails(App.network_protocol, App.clientID, App.username));
-		//this.sendEvent(new EventPing());
+		this.sendEvent(new EventPing());
     }
 
     public void close()
@@ -99,7 +103,8 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
     {
     	ReferenceCountUtil.release(this.reader.queue);
 		Client.connectionID = null;
-    }
+    	this.open = false;
+	}
 
     // Message received
     @Override
@@ -131,7 +136,7 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
 				latencyCount = 0;
 			}
 
-			//this.sendEvent(new EventPing());
+			this.sendEvent(new EventPing());
 		}
     }
 
@@ -155,6 +160,8 @@ public class ClientHandler extends ChannelInboundHandlerAdapter
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable e)
     {
+		this.open = false;
+
 		System.err.println("A network exception has occurred: " + e.toString());
 		e.printStackTrace();
 

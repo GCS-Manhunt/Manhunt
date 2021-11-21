@@ -2,6 +2,7 @@ package manhuntgame.network.event;
 
 import io.netty.buffer.ByteBuf;
 import manhuntgame.app.App;
+import manhuntgame.app.GameState;
 import manhuntgame.network.NetworkUtils;
 import manhuntgame.ui.screen.ScreenGamePreview;
 import manhuntgame.ui.screen.ScreenSelectUsername;
@@ -12,6 +13,7 @@ public class EventAcceptConnection extends PersonalEvent
     public String location;
     public String time;
     public String[] rules;
+    public int code;
 
     @Override
     public void write(ByteBuf b)
@@ -23,6 +25,8 @@ public class EventAcceptConnection extends PersonalEvent
 
         for (String s: rules)
             NetworkUtils.writeString(b, s);
+
+        b.writeInt(code);
     }
 
     @Override
@@ -37,6 +41,8 @@ public class EventAcceptConnection extends PersonalEvent
         {
             rules[i] = NetworkUtils.readString(b);
         }
+
+        code = b.readInt();
     }
 
     @Override
@@ -45,6 +51,8 @@ public class EventAcceptConnection extends PersonalEvent
         if (this.clientID == null)
         {
             App.app.screen = new ScreenGamePreview(gameName, location, time, rules);
+            GameState.game = new GameState();
+            GameState.game.code = code;
         }
     }
 }

@@ -27,11 +27,9 @@ public class App implements IUpdater, IDrawer, IWindowHandler
 
     public static final int network_protocol = 0;
     public static UUID clientID;
-    public static String username = "test";
+    public static String username = "";
 
     public boolean initialized = false;
-
-    public boolean debugLocation = false;
 
     public App(BaseFileManager fileManager)
     {
@@ -42,7 +40,6 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         NetworkEventMap.register(EventSendClientDetails.class);
         NetworkEventMap.register(EventKick.class);
         NetworkEventMap.register(EventAcceptConnection.class);
-        NetworkEventMap.register(EventSendPlayerIdentity.class);
         NetworkEventMap.register(EventSendLocation.class);
         NetworkEventMap.register(EventSendHeading.class);
         NetworkEventMap.register(EventSeekerProximity.class);
@@ -50,6 +47,7 @@ public class App implements IUpdater, IDrawer, IWindowHandler
         NetworkEventMap.register(EventEnterCode.class);
         NetworkEventMap.register(EventMakeSeeker.class);
         NetworkEventMap.register(EventSendScore.class);
+        NetworkEventMap.register(EventCodeConfirmation.class);
 
     }
 
@@ -97,7 +95,7 @@ public class App implements IUpdater, IDrawer, IWindowHandler
 
         drawer.updateDimensions();
 
-        if (app.window.platformHandler != null && !debugLocation)
+        if (app.window.platformHandler != null)
            app.window.platformHandler.updateLocation();
 
         synchronized (eventsIn)
@@ -112,7 +110,7 @@ public class App implements IUpdater, IDrawer, IWindowHandler
 
         screen.update();
 
-        if (Client.handler != null && Client.handler.ctx != null)
+        if (Client.handler != null && Client.handler.ctx != null && Client.handler.open)
         {
             eventsOut.add(new EventSendLocation(Location.longitude, Location.latitude, Location.altitude));
             Client.handler.reply();

@@ -35,7 +35,7 @@ public class ScreenMain extends Screen
         @Override
         public void run()
         {
-            App.app.screen = new ScreenConnect();
+            App.app.screen = new ScreenSelectUsername();
         }
     });
 
@@ -45,6 +45,7 @@ public class ScreenMain extends Screen
         public void run()
         {
             // App.app.screen = new ScreenSettings(); todo later
+            App.app.screen = new ScreenBeginGame(); // temp debugging
         }
     });
 
@@ -73,9 +74,9 @@ public class ScreenMain extends Screen
     public void update()
     {
         // update buttons and not much else
-        toDebug.update();
+        //toDebug.update();
         play.update();
-        settings.update();
+        //settings.update();
         help.update();
         quit.update();
     }
@@ -83,15 +84,15 @@ public class ScreenMain extends Screen
     @Override
     public void draw()
     {
-        toDebug.draw();
+        //toDebug.draw();
         play.draw();
-        settings.draw();
+        //settings.draw();
         help.draw();
         quit.draw();
 
         Drawer drawer = App.app.drawer;
         drawer.setFontSize(120);
-        drawer.drawText(60, 100, "Manhunt Game", false);
+        drawer.drawText(540, 100, "Manhunt Game");
 
     }
 }

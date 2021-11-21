@@ -21,6 +21,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AndroidFiles;
+import com.badlogic.gdx.backends.android.DefaultAndroidFiles;
 
 public class AndroidLauncher extends AndroidApplication implements LocationListener
 {
@@ -41,7 +42,7 @@ public class AndroidLauncher extends AndroidApplication implements LocationListe
 		super.onCreate(savedInstanceState);
 
 		this.getFilesDir();
-		Gdx.files = new AndroidFiles(this.getAssets(), this.getFilesDir().getAbsolutePath());
+		Gdx.files = new DefaultAndroidFiles(this.getAssets(), this, true);
 		ManhuntGameApp.appType = ApplicationType.Android;
 		ManhuntGameApp.initialize();
 

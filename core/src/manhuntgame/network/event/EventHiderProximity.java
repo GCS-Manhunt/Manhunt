@@ -36,6 +36,7 @@ public class EventHiderProximity extends PersonalEvent{
 
     @Override
     public void execute() {
+
         if (proximity)
             GameState.game.proximity = "Seeker in proximity!";
         else

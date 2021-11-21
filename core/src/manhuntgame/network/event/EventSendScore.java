@@ -20,6 +20,7 @@ public class EventSendScore extends PersonalEvent
 
     }
     public EventSendScore(int playerScore , int playerRanking, int scoreAhead) {
+        System.out.println("Got score: " + playerScore + " " + playerRanking + " " + scoreAhead);
         this.playerScore = playerScore;
         this.playerRanking = playerRanking;
         this.scoreAhead = scoreAhead;
