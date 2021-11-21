@@ -12,7 +12,8 @@ public class ScreenHider extends Screen
 {
     public HeadingTracker headingTracker = GameState.game.headingTracker;
     // public scoreTracker scoreTracker = GameState.game.scoreTracker;
-    // ^ make the above whatever is used to track the score
+
+    // use screenHeadings instead, this file is just for personal use
 
     public String code = "123456";
 

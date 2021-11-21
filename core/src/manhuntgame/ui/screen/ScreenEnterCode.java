@@ -9,7 +9,7 @@ import manhuntgame.app.PlayerHeading;
 import manhuntgame.ui.Button;
 import manhuntgame.ui.TextBox;
 
-// REPLACE THIS WITH MATEI'S VERSION
+// DEPRECATED, USE ScreenInputCode INSTEAD
 
 public class ScreenEnterCode extends Screen {
     Thread ClientThread; // use this for sending the text and such

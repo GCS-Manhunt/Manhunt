@@ -26,7 +26,7 @@ public class ScreenBeginGame extends Screen
         @Override
         public void run()
         {
-            App.app.screen = new ScreenHider(); // can be changed later
+            App.app.screen = new ScreenHeadings(); // can be changed later
         }
     });
 
