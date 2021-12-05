@@ -49,12 +49,12 @@ public class ScreenMain extends Screen
         }
     });
 
-    Button help = new Button(540, 1500, 900, 200, "About/Help", new Runnable()
+    Button help = new Button(540, 1500, 900, 200, "About", new Runnable()
     {
         @Override
         public void run()
         {
-            // App.app.screen = new ScreenHelp(); just text, can deal with it later
+            App.app.screen = new ScreenInfo();
         }
     });
 
